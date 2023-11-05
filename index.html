@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Product List</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top info section -->
+    <section class="header__section">
+      <div>
+         <p class="header__section--p">Free Shipping for Platinum & Gold members. Free Shipping at $25 for all other shoppers</p>
+      </div>
+      <!-- Info section links -->
+      <div class="header__section--links">
+         <a href="#" class="section__link">Weekly Adds</a>
+         <a href="#" class="section__link">Today's Deals</a>
+         <a href="#" class="section__link">Holiday Deals</a>
+      </div>
+    </section>
+
+     <!-- Header -->
+    <header id="myHeader" class="header">
+      <!-- Page navigation -->
+      <nav class="nav">
+        <img src="logo.png" id="logo__img">
+        <!-- Filter buttons -->
+        <div id = "btn" class="btn-container">
+        </div>
+        <!-- Sign in button  -->
+        <div class="sign__in">
+          <i class="fa-solid fa-user"></i>
+          <button class="sign__in--btn">Sign in</button>
+        </div>
+        <!-- Shopping cart icon -->
+        <i class="fa-solid fa-cart-shopping"></i>
+      </nav>
+    </header>
+
+    <!-- Info banner  -->
+    <section class="banner">
+      <div>
+        <p class="banner__p"><span class="banner__logo">Shopping</span>Join for 50% off first purchase!</p>
+      </div>
+      <div>
+        <button class="banner__btn">Explore Deals</button>
+      </div> 
+    </section>
+     
+    <!-- Product cards generated from products.js -->
+    <div class="product__cards">
+    </div>
+    <footer>Copyright &copy; 2023</footer>
+    <!-- javascript -->
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
